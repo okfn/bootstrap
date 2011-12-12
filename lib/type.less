@@ -9,10 +9,15 @@
 p {
   #font > .shorthand(normal,@basefont,@baseline);
   margin-bottom: @baseline / 2;
+  font-family: @baseFontFamily;
   small {
     font-size: @basefont - 2;
     color: @grayLight;
   }
+}
+
+table {
+  font-family: @baseFontFamily;
 }
 
 
@@ -20,8 +25,9 @@ p {
 // --------
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
+  //font-weight: bold;
   color: @grayDark;
+  font-family: @baseFontFamily;
   small {
     color: @grayLight;
   }
@@ -72,6 +78,7 @@ h6 {
 // Unordered and Ordered lists
 ul, ol {
   margin: 0 0 @baseline 25px;
+  font-family: @baseFontFamily;
 }
 ul ul,
 ul ol,
